@@ -1,0 +1,89 @@
+
+
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 197%;
+    height: 75vh;
+    border:  solid 1px black;
+    padding: 50px;
+    background: rgb(245, 242, 242);
+
+}
+.aboutus{
+    height: 450px;
+    width: 310px;
+    font-size: 14px;
+    padding-top: 30px;
+    
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding-right: 15px;
+    text-align: left;
+    margin-left: 35px;
+   // border: solid 1px black;
+}
+.about-btn{
+    padding: 12px 25px;
+    background: orangered;
+    border: orangered;
+    color:  white;
+    transition: 0.6ms;
+    margin-top: 25px;
+}.about-btn:hover{
+    background:rgb(102, 92, 92); ;
+}
+
+.about-info{
+    height: 450px;
+    width: 350px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    
+    padding-right: 15px;
+    margin-left: 20px;
+    //border: solid 1px black;
+}
+.about-info{
+img{
+    height: 169px;
+    width: 300px;
+}
+}
+
+.about-info{
+    .background{
+        h1{
+            font-size: 15px;
+        }
+    }
+}
+.background{
+
+    background:white;
+    height: 242px;
+    width: 300px;
+    margin-left: 25px;
+    margin-top: -12px;
+    padding-top: 19Spx;
+}
+.about-info{
+    .info{
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        
+    }
+}
+
+.info-btn{
+    padding: 12px 25px;
+    background: orangered;
+    border: orangered;
+    color:  white;
+    margin-top: 20px;
+    transition: 0.6ms;
+}
+.info-btn:hover{
+    background: rgb(102, 92, 92);
+}
