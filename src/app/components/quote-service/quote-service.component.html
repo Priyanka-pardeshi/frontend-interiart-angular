@@ -2,10 +2,13 @@
     <!--Our services-->
     <div class="our-service">
         <div class="service-title">
-            <h1>Our Services<hr></h1>
+            <h1>Our Services
+                <hr>
+            </h1>
         </div>
         <div class="service-info">
-            <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestias dicta eius blanditiis iste id
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestias dicta eius blanditiis iste id
                 vitae commodi pariatur totam fugit? Saepe blanditiis aliquid et eum! Nihil recusandae hic dolores velit.
                 <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa tempore laborum, quas, amet odit
                 repellat natus autem, suscipit reiciendis consequuntur et vero fugiat molestias eaque inventore
@@ -17,41 +20,14 @@
     </div>
     <!--Services icons-->
     <div class="icons-list">
-        <div class="icons">
+       
+       
+        <div *ngFor="let service_info of service_information" class="icons">
             <div class="icons-info">
-                <img src="/assets/interial.jpg" alt="">
+                <img src="{{service_info.img}}">
             </div>
-            <div class="icons-title">
-                <p class="title-service-icon">Interial design</p>
-                <p class="serivice-about-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quam optio placeat perspiciatis nihil qu.</p>
-            </div>
-        </div>
-        <div class="icons">
-            <div class="icons-info">
-                <img src="/assets/interial.jpg" alt="">
-            </div>
-            <div class="icons-title">
-                <p class="title-service-icon">Internal design</p>
-                <p class="serivice-about-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quam optio placeat perspiciatis nihil qu.</p>
-            </div>
-        </div>
-        <div class="icons">
-            <div class="icons-info">
-                <img src="/assets/interial.jpg" alt="">
-            </div>
-            <div class="icons-title">
-                <p class="title-service-icon">Interial design</p>
-                <p class="serivice-about-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quam optio placeat perspiciatis nihil qu.</p>
-            </div>
-        </div>
-        <div class="icons">
-            <div class="icons-info">
-                <img src="/assets/interial.jpg" alt="">
-            </div>
-            <div class="icons-title">
-                <p class="title-service-icon">Interial design</p>
-                <p class="serivice-about-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quam optio placeat perspiciatis nihil qu.</p>
-            </div>
+            <p class="title-service-icon">{{service_info.title}}</p>
+            <p class="serivice-about-info">{{service_info.about}}</p>
         </div>
     </div>
 </div>
