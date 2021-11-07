@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl,FormGroup,FormBuilder, Validators } from '@angular/forms';
+import { SaveDataService } from 'src/services/save-data.service';
+
+
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
@@ -9,7 +12,7 @@ export class QuoteComponent implements OnInit {
 quoteForm:FormGroup;
 submitted = false;
 
-  constructor(private fb:FormBuilder) { }
+  constructor(private fb:FormBuilder, private quote:SaveDataService) { }
 
   ngOnInit() {
     this.quoteForm=this.fb.group({
@@ -21,8 +24,11 @@ submitted = false;
   onSubmit() {
     this.submitted = true;
     if (this.quoteForm.valid) {
-      //console.log(this.quoteForm.value);
-      return;
+      this.quote.getData(this.quoteForm.value).subscribe(
+        data=>{
+          console.log(data)
+        }
+      )
     }
     alert('SUCCESS!! \n\n' + JSON.stringify(this.quoteForm.value, null, 4));
   }
