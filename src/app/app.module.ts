@@ -10,7 +10,7 @@ import { QuoteServiceComponent } from './components/quote-service/quote-service.
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule }   from '@angular/forms';
 import { TempComponent } from './components/temp/temp.component';
-
+import { CommonModule } from '@angular/common';
 
 
 
@@ -26,7 +26,8 @@ import { TempComponent } from './components/temp/temp.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,ReactiveFormsModule
+    FormsModule,ReactiveFormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
