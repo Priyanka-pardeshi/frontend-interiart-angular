@@ -1,7 +1,10 @@
+$interiart-font: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
 .main-logo{
     text-align: center;
+    color: orangered;
+    font-size: 18ppx;
 }
-
 
 .address{
     height: 35px;
@@ -14,10 +17,11 @@
 .address{
     p{
         margin-top: 10px;
-        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-family:$interiart-font;
         font-size: 12px;
     }
 }
+
 .menu-container{
     
     width: 98%;
@@ -41,10 +45,15 @@
     text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
-    
+    color: black;
         }
     }
 }
+.menu-element{
+    //color: black;
+
+}
+
 .menu-element:hover{
     color: orangered;
 }
@@ -53,6 +62,7 @@
     li{
         display: inline;
         list-style: none;
+        font-size: 13px;
     }
 }
 
@@ -69,9 +79,19 @@
         padding-left: 90px;
         color: white;
         font-size: 40px;
-        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-family: $interiart-font;
         font-weight: bolder;
         word-spacing: 5px;
         
     }
+}
+.second-logo{
+    height:30px ;
+    width: 70px;
+    margin-top: -27px;
+    font-size: 21px;
+  //  border: solid 1px black;
+    float: left;
+    padding-left: 30px;
+    color: orangered;
 }

@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutInteriartComponent } from './components/about-interiart/about-interiart.component';
 import { HomeComponent } from './components/home/home.component';
+import { QuoteServiceComponent } from './components/quote-service/quote-service.component';
 import { QuoteComponent } from './components/quote/quote.component';
+import { TempComponent } from './components/temp/temp.component';
 
 const routes: Routes = [
   {
@@ -13,6 +15,14 @@ const routes: Routes = [
   },
   {
     path:'about',component:AboutInteriartComponent
+  },
+  {
+    path:'service',component:QuoteServiceComponent
+  },
+  { 
+    path: '', redirectTo: '/home', pathMatch: 'full' },
+  {
+    path:'temp',component:TempComponent
   }
 ];
 

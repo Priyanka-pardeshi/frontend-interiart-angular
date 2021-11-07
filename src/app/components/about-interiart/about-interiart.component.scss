@@ -87,3 +87,14 @@ img{
 .info-btn:hover{
     background: rgb(102, 92, 92);
 }
+
+.aboutus{
+    h1{
+        hr{
+            // create function
+            width: 13%;
+            margin-left: 0;
+            border: solid orangered;
+        }
+    }
+}
