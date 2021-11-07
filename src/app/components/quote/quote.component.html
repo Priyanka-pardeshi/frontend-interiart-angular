@@ -1,14 +1,18 @@
 <div class="main-quote">
     <div class="form-class">
-        <h1>GET A QUOTE</h1>
-        <form>
-            
-            <input  type="text" placeholder="Enter your name">
+        <h1> GET A QUOTE<hr></h1>
+        <form [formGroup]="quoteForm" (ngSubmit)="onSubmit()">
+            <input  type="text" placeholder="Enter your name" formControlName="name">
+            <div *ngIf="f.name.invalid && submitted" class="alert-error">
+                <div *ngIf="f.name.errors?.required">
+                    <p>Enter valid name</p>
+                </div>
+                </div>
 
-            <input type="text" placeholder="Enter phone numner">
+            <input type="text" placeholder="Enter phone numner" formControlName="number">
 
-            <input type="email" placeholder="Enter your email">
-<br>
+            <input type="email" placeholder="Enter your email" formControlName="email">
+            <br>
             <select>
                 <option value="aa">property</option>
                 <option value="aa">Gov</option>

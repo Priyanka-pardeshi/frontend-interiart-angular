@@ -1,21 +1,25 @@
 <div class="main-container">
     <div class="main-logo">
-        <p>interiArt</p>
+        <p><strong>interiArt</strong></p>
     </div>
-
+    
     <div class="address">
         <p class="address-text">Address:4578 Armora road, Glasgow 84D 890| (800)976-8263</p>
     </div>
 
 
     <div class="menu-container">
-                <ul>
-                    <li class="menu-element"><a href="#"></a>HOME</li>
-                    <li class="menu-element"><a href="#"></a>HOME</li>
-                    <li class="menu-element"><a href="#"></a>HOME</li>
-                    <li class="menu-element"><a href="#"></a>HOME</li>
-                    <li class="menu-element"><a href="#"></a>HOME</li>
-                </ul>
+        <div class="second-logo">
+            <p><strong>interiart</strong></p>
+        </div>
+        <ul>
+           
+            <li class="menu-element"><a routerLink="/home">HOME</a></li>
+            <li class="menu-element"><a routerLink="/about">ABOUT</a></li>
+            <li class="menu-element"><a [routerLink]="['/', 'service']">SERVICE</a></li>
+            <li class="menu-element"><a href="#"></a>PORTFOLIO</li>
+            <li class="menu-element"><a href="#"></a>NEWS</li>
+        </ul>
     </div>
 
 
@@ -25,3 +29,4 @@
 </div>
 <app-quote></app-quote>
 <app-about-interiart></app-about-interiart>
+<app-quote-service></app-quote-service>

@@ -1,3 +1,6 @@
+$interi-font: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+
 .main-quote{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid white;
@@ -15,15 +18,15 @@
     padding: 25px;
 }
 input{
-    background:rgb(224, 219, 219)        ;
-    font-family:  "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background:rgb(224, 219, 219)       ;
+    font-family: $interi-font;
     padding: 9px;
     margin: 10px;
     width: 260px;
     border: none;
 }
 select{
-    font-family:  "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: $interi-font;
     background:rgb(224, 219, 219)        ;
 
     padding: 9px;
@@ -32,11 +35,26 @@ select{
     border: none;
 }
 .quote-btn{
-    font-family:  "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-
+    font-family: $interi-font;
+    color:  white;
+    background: orangered;
+    border: orangered;
     padding: 9px;
     margin: 15px;
     width: 150px;
     border: none;
 
+}
+.alert-error{
+    font-size: 10px;
+    color: red;
+}
+.form-class{
+    h1{
+        hr{
+            width: 13%;
+            margin-left: 0;
+            border: solid orangered;
+        }
+    }
 }

@@ -69,3 +69,13 @@ img{
 .service-page-btn:hover{
     background: gray;
 }
+
+.service-title{
+    h1{
+        hr{
+            width: 13%;
+            margin-left: 0;
+            border: solid orangered;
+        }
+    }
+}
