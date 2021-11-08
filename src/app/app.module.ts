@@ -12,6 +12,7 @@ import { FormsModule }   from '@angular/forms';
 import { TempComponent } from './components/temp/temp.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { MenuComponent } from './components/menu/menu.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     QuoteComponent,
     AboutInteriartComponent,
     QuoteServiceComponent,
-    TempComponent
+    TempComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

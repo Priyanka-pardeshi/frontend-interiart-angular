@@ -9,23 +9,23 @@ export class QuoteServiceComponent implements OnInit {
   service_information:any[]=[
     {
       'img':'/assets/interial.jpg',
-      'title':'Interial design',
-      'about':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quam optio placeat perspiciatis nihil qu'
+      'title':'INTERIAL SERVICE',
+      'about':'Interior design services offer a vast variety of solutions for our clients’ homes and offices.'
     },
     {
       'img':'/assets/interial.jpg',
-      'title':'Interial design',
-      'about':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quam optio placeat perspiciatis nihil qu'
+      'title':'DECORATIVE SERVICE',
+      'about':'Our professional decorators will be happy to help you change your house’s inner look.'
     },
     {
       'img':'/assets/interial.jpg',
-      'title':'Interial design',
-      'about':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quam optio placeat perspiciatis nihil qu'
+      'title':'SPACE PLANING',
+      'about':'We create better interior experiences through our space planning services.'
     },
     {
       'img':'/assets/interial.jpg',
-      'title':'Interial design',
-      'about':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quam optio placeat perspiciatis nihil qu'
+      'title':'PROJECT MANAGEMENT',
+      'about':'We provide proper project management as it’s one of the main success factors in interior design.'
     }
   ]
   constructor() { }

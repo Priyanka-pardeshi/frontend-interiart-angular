@@ -11,6 +11,6 @@ export class SaveDataService {
   constructor(private http:HttpClient) { }
 
   getData(quoteData:quotes):Observable<any>{
-    return this.http.post(this.baseurl+'/getdata/', quoteData)
+    return this.http.post(this.baseurl+'/saveData/', quoteData)
   }
 }

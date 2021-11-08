@@ -1,6 +1,6 @@
 <div class="main-container">
     <div class="main-logo">
-        <p><strong>interiArt</strong></p>
+        <img src="/assets/logo-interiart.png" alt="Oops cant load logo"> 
     </div>
     
     <div class="address">
@@ -22,27 +22,14 @@
             </ul>
         </div>
     </div>
-
-
-    <div class="menu-container">
-        <div class="second-logo">
-            <p><strong>interiart</strong></p>
-        </div>
-        <ul>
-           
-            <li class="menu-element"><a routerLink="/home">HOME</a></li>
-            <li class="menu-element"><a routerLink="/about">ABOUT</a></li>
-            <li class="menu-element"><a [routerLink]="['/', 'service']">SERVICE</a></li>
-            <li class="menu-element"><a href="#"></a>PORTFOLIO</li>
-            <li class="menu-element"><a href="#"></a>NEWS</li>
-        </ul>
-    </div>
-
-
+<div class="menu">
+<app-menu></app-menu>
+</div>
     <div class="img-container">
-        <p class="main-text">WE CREATE COZINESS FOR<br>YOUR APARTMENT</p>
+        <h2 class="main-text">WE CREATE COZINESS FOR<br>YOUR APARTMENT</h2>
     </div>
 </div>
+<!--jed index, post api,scroll the menu-->
 <app-quote></app-quote>
 <app-about-interiart></app-about-interiart>
-<app-quote-service></app-quote-service>
+<app-quote-service></app-quote-service>\
