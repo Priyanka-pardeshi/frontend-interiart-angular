@@ -10,12 +10,12 @@ export class AboutInteriartComponent implements OnInit {
     {
       'img': '/assets/interial.jpg',
       'title': 'RECIDENCIAL DESIGN',
-      'about': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam dolor eum, obcaecati voluptas magnam voluptatem neque? Itaque minima excepturi dolores simi.'
+      'about': 'Our residential interior design services are perfect for creating a cozy atmosphere in your house regardless of its size.'
     },
     {
       'img': '/assets/interial.jpg',
       'title':'COMMERCIAL DESIGN',
-      'about': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam dolor eum, obcaecati voluptas magnam voluptatem neque? Itaque minima excepturi dolores simi.'
+      'about': 'We take a dedicated approach to help our commercial clients create the interior for their company offices and other spaces.'
     }
   ];
   constructor() { }

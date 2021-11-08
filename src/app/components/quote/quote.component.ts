@@ -18,7 +18,10 @@ submitted = false;
     this.quoteForm=this.fb.group({
       name:['',Validators.required],
       number:['',Validators.required],
-      email:['',Validators.required]
+      email:['',Validators.required],
+      property:['',Validators.required],
+      service:['',Validators.required],
+      message:['',Validators.required]
     })
   }
   onSubmit() {

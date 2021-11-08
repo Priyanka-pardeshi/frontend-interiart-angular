@@ -1,0 +1,49 @@
+@import "../../shared/veriables";
+@import "../../shared/mixin";
+
+.menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;;
+    border: solid 1px black;
+    letter-spacing: .05em;
+    padding: 21px 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: white;
+}
+
+.menu-container{
+    li{
+        display: inline;
+        list-style: none;
+        font-size: 13px;
+        a{
+            display: inline-block;
+            padding: 0em 1.5em;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+            font-size: 12px;
+            line-height: 1.28;
+           
+        }
+    }
+}
+.menu-container{
+    ul{
+    
+    font-size: 12px;
+    letter-spacing: .05em;
+    
+    }
+
+}
+
+.menu-container{
+    li{
+        a:hover{
+            color: orangered;
+        }}}
+

@@ -1,6 +1,6 @@
 <div class="main-quote">
     <div class="form-class">
-        <h1> GET A QUOTE<hr></h1>
+        <h4> GET A QUOTE<hr></h4>
         <form [formGroup]="quoteForm" (ngSubmit)="onSubmit()">
             <input  type="text" placeholder="Enter your name" formControlName="name">
             <div *ngIf="f.name.invalid && submitted" class="alert-error">
@@ -9,21 +9,38 @@
                 </div>
                 </div>
 
-            <input type="text" placeholder="Enter phone numner" formControlName="number">
+            <input type="text" placeholder="Enter phone number" formControlName="number">
 
             <input type="email" placeholder="Enter your email" formControlName="email">
             <br>
-            <select>
-                <option value="aa">property</option>
+            <select name="Property" formControlName="property">
+                <option value="">property</option>
                 <option value="aa">Gov</option>
                 <option value="aa">property</option>
             </select><br>
-            <select>
-                <option value="bb">Services</option>
+            <div *ngIf="f.property.invalid && submitted" class="alert-error">
+                <div *ngIf="f.property.errors?.required">
+                    <p>Select property</p>
+                </div>
+                </div>
+
+            <select name="Service" required formControlName="service">
+                <option value="">Services</option>
                 <option value="bb">Gov</option>
                 <option value="bb">property</option>
             </select>
-            <textarea name="" id="" cols="40" rows="2">Message</textarea>
+            <div *ngIf="f.service.invalid && submitted" class="alert-error">
+                <div *ngIf="f.service.errors?.required">
+                    <p>Select Service</p>
+                </div>
+                </div>
+
+            <textarea name="" formControlName="message" id="" cols="40" rows="2">Message</textarea>
+            <div *ngIf="f.message.invalid && submitted" class="alert-error">
+                <div *ngIf="f.message.errors?.required">
+                    <p>Enter the messages</p>
+                </div>
+                </div>
             <button class="quote-btn">Submit</button>
         </form>
     </div>

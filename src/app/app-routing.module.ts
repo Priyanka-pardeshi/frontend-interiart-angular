@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutInteriartComponent } from './components/about-interiart/about-interiart.component';
 import { HomeComponent } from './components/home/home.component';
+import { MenuComponent } from './components/menu/menu.component';
 import { QuoteServiceComponent } from './components/quote-service/quote-service.component';
 import { QuoteComponent } from './components/quote/quote.component';
 import { TempComponent } from './components/temp/temp.component';
@@ -23,6 +24,9 @@ const routes: Routes = [
     path: '', redirectTo: '/home', pathMatch: 'full' },
   {
     path:'temp',component:TempComponent
+  },
+  {
+    path:'menu',component:MenuComponent
   }
 ];
 

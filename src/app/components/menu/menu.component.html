@@ -1,0 +1,14 @@
+
+<div class="menu-container">
+    <div class="second-logo">
+        <img src="/assets/logo-interiart.png" alt="Oopse cant load logo">
+    </div>
+    <ul>
+
+        <li><a style="color: red;" routerLink="/home" >HOME</a></li>
+        <li id="about" (click)="toAbout()"> <a routerLink="/about">ABOUT</a></li>
+        <li><a [routerLink]="['/', 'service']">SERVICE</a></li>
+        <li><a href="#"></a>PORTFOLIO</li>  
+        <li><a href="#"></a>NEWS</li>
+    </ul>
+</div>

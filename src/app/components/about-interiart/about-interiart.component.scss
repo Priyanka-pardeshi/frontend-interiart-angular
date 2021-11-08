@@ -1,21 +1,23 @@
-@import "veriables";
-@import "mixin";
+@import "../../shared/veriables";
+@import "../../shared/mixin";
 
 .about-container{
     display: flex;
     flex-wrap: wrap;
     width: 197%;
     height: 75vh;
-    border:  solid 1px black;
-    padding: 50px;
+    //border:  solid 1px black;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 75px;
     background: rgb(245, 242, 242);
 
 }
 .aboutus{
-    height: 450px;
-    width: 310px;
+    height: 342px;
+    width: 364px;
     font-size: 14px;
-    padding-top: 30px;
+    line-height: 1.5;
     font-family:$interiart-font;
     padding-right: 15px;
     text-align: left;
@@ -23,31 +25,36 @@
    // border: solid 1px black;
 }
 .about-btn{
-    padding: 12px 25px;
-    background: orangered;
-    border: orangered;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color:  white;
+    background: orangered;
+    border:solid orangered;
+    padding: 12px 25px;
+    font-size: 12px;
+    line-height: 11px;
+    margin: 15px;
     transition: 0.6ms;
-    margin-top: 25px;
+    
+
 }.about-btn:hover{
     background:rgb(102, 92, 92); ;
 }
 
 .about-info{
-    height: 450px;
-    width: 350px;
+    height: 477px;
+    width: 330px;
     text-align: center;
     font-size: 14px;
-    font-family:$interiart-font;
-    
+    padding-left: 15px;
     padding-right: 15px;
-    margin-left: 20px;
+    
+    font-family:$interiart-font;
     //border: solid 1px black;
 }
 .about-info{
 img{
-    height: 169px;
-    width: 300px;
+    height: 196px;
+    width: 330px;
 }
 }
 
@@ -61,28 +68,38 @@ img{
 .background{
 
     background:white;
-    height: 242px;
-    width: 300px;
-    margin-left: 25px;
+    height: 185px;
+    width: 330px;
     margin-top: -12px;
-    padding-top: 19Spx;
+    padding-top: 30px;
+    
+        h1:hover{
+            color: orangered;
+        }
+    
 }
 .about-info{
     .info{
         text-align: center;
         padding-left: 30px;
         padding-right: 30px;
-        
+        line-height: 2;
+        font-size: 12px;
     }
 }
 
 .info-btn{
-    padding: 12px 25px;
-    background: orangered;
-    border: orangered;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color:  white;
-    margin-top: 20px;
+    background: orangered;
+    border:solid orangered;
+    padding: 12px 25px;
+    font-size: 12px;
+    line-height: 11px;
+  
     transition: 0.6ms;
+    
+
 }
 .info-btn:hover{
     background: rgb(102, 92, 92);
