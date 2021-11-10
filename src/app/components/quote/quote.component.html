@@ -14,6 +14,9 @@
                 <input type="text" placeholder="Enter phone number" formControlName="phone">
             </div>
             <input type="email" placeholder="Enter your email" formControlName="email">
+            <div *ngIf="f.email.errors?.pattern">
+                <p>invalid email</p>
+            </div>
             <!--email, phone -->
             <br>
             <select name="Property" formControlName="property">

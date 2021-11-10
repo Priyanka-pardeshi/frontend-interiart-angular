@@ -10,7 +10,7 @@
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 75px;
-    background: rgb(245, 242, 242);
+    background: $about-container-background;
 
 }
 .aboutus{
@@ -26,7 +26,7 @@
 }
 .about-btn{
     font-family: $interiart-font;
-    color:  white;
+    color:  $white-color;
     background: $theme-color;
     border:solid $theme-color;
     padding: 12px 25px;
@@ -37,7 +37,7 @@
     
 
 }.about-btn:hover{
-    background:rgb(102, 92, 92); ;
+    background:$btn-hover-background;
 }
 
 .about-info{
@@ -67,7 +67,7 @@ img{
 }
 .background{
 
-    background:white;
+    background:$white-color;
     height: 185px;
     width: 330px;
     margin-top: -12px;
@@ -90,7 +90,7 @@ img{
 
 .info-btn{
     font-family: $interiart-font;
-    color:  white;
+    color:  $white-color;
     background: $theme-color;
     border:solid $theme-color;
     padding: 12px 25px;
@@ -102,7 +102,7 @@ img{
 
 }
 .info-btn:hover{
-    background: rgb(102, 92, 92);
+    background: $btn-hover-background;
 }
 
 .aboutus{

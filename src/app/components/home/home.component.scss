@@ -1,22 +1,25 @@
 @import "../../shared/veriables";
 @import "../../shared/mixin";
 
-.main-logo{
-    text-align: center;
-    color: $theme-color;
-    font-size: 18ppx;
+// .main-logo{
+//     text-align: center;
+//     color: $theme-color;
+//     font-size: 18ppx;
     
-}
+// }
 
 .address{
     height: 35px;
-    width: 98%;
+    
     border: solid 1px black;
     padding-left: 40px;
     background-color:  #343a40;
-    color: white;
+    color: $white-color;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
 .address{
     p{
@@ -45,7 +48,7 @@
     h2{
         padding-top: 250px;
         padding-left: 75px;
-        color: white;
+        color: $white-color;
         font-size: 44px;
         font-family: $interiart-font;
         font-weight: bolder;
@@ -73,7 +76,7 @@
         li{
             margin-top: 15px;
             display: inline;
-            color: black;
+            color:$black-color;
             text-decoration: none;
             padding: 7px;
             display: inline;

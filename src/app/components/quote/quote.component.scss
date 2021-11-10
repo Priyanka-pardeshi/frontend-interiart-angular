@@ -3,8 +3,8 @@
 
 
 .main-quote{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid white;
+    background: $white-color 0% 0% no-repeat padding-box;
+    border: 1px solid $theme-color;
     border-radius: 3px;
     
 }
@@ -21,7 +21,7 @@
 
 
 input{
-    background:rgb(224, 219, 219)       ;
+    background:$input-background-color;
     font-family: $interiart-font;
     padding: 9px;
     margin: 10px;
@@ -32,8 +32,7 @@ input{
 }
 select{
     font-family: $interiart-font;
-    background:rgb(224, 219, 219)        ;
-
+    background:$input-background-color;
     padding: 9px;
     margin: 10px;
     width: 275px;
@@ -41,7 +40,7 @@ select{
 }
 .quote-btn{
     font-family: $interiart-font;
-    color:  white;
+    color: $white-color;
     background: $theme-color;
     border:solid 1px $theme-color;
     padding: 12px 25px;
@@ -53,7 +52,11 @@ select{
 }
 .alert-error{
     font-size: 10px;
-    color: red;
+    margin-top: 0px;
+    color: $alert-text;
+    p{
+        margin-top: -7px;
+    }
 }
 .form-class{
     h4{
@@ -65,9 +68,10 @@ select{
 form{
     textarea{
         margin-left: 10px;
-        background: #e0dbdb;
+        background: $input-background-color;
         padding-left: 9px;
         padding-top: 9px;
+        border: $input-background-color;
         font-family: $interiart-font;
     }
 }
