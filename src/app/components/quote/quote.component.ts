@@ -17,7 +17,7 @@ submitted = false;
   ngOnInit() {
     this.quoteForm=this.fb.group({
       name:['',Validators.required],
-      number:['',Validators.required],
+      phone:['',Validators.required],
       email:['',Validators.required],
       property:['',Validators.required],
       service:['',Validators.required],
@@ -27,7 +27,7 @@ submitted = false;
   onSubmit() {
     this.submitted = true;
     if (this.quoteForm.valid) {
-      this.quote.getData(this.quoteForm.value).subscribe(
+      this.quote.create(this.quoteForm.value).subscribe(
         data=>{
           console.log(data)
         }

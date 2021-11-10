@@ -18,6 +18,8 @@
     right: 55px;
     padding: 18px;
 }
+
+
 input{
     background:rgb(224, 219, 219)       ;
     font-family: $interiart-font;
@@ -40,8 +42,8 @@ select{
 .quote-btn{
     font-family: $interiart-font;
     color:  white;
-    background: orangered;
-    border:solid 1px orangered;
+    background: $theme-color;
+    border:solid 1px $theme-color;
     padding: 12px 25px;
     font-size: 12px;
     line-height: 11px;
