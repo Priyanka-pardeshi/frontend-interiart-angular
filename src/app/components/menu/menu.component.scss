@@ -4,17 +4,17 @@
 .menu-container{
     display: flex;
     position: absolute;
-    top:76px;
+    top:37px;
     width: -webkit-fill-available;
     align-items: center;
     justify-content: space-between;
-    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;;
+    font-family: $interiart-font;
      
     letter-spacing: .05em;
     padding: 21px 0;
     padding-left: 50px;
     padding-right: 50px;
-    background: white;
+    background: $white-color;
 }
 
 .menu-container{
@@ -27,7 +27,7 @@
             padding: 0em 1.5em;
             text-decoration: none;
             text-transform: uppercase;
-            color: black;
+            color: $black-color;
             font-size: 10px;
             line-height: 1.28;
            
@@ -47,6 +47,6 @@
 .menu-container{
     li{
         a:hover{
-            color: orangered;
+            color: $theme-color;
         }}}
 

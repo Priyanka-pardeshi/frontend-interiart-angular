@@ -18,7 +18,7 @@
     margin-top: -10px;
     padding-top: 120px;
     padding-left: 75px;
-    color: white;
+    color: $white-color;
     font-family: $interiart-font;
     p{
         font-size: 12px;
@@ -45,7 +45,7 @@
     // border: solid 1px red;
     margin-left: 50px;
     text-align: center;
-    color: white;
+    color: $white-color;
     font-size: 12px;
     padding-top: 35px;
 }
@@ -61,7 +61,7 @@ img{
 
 .service-page-btn{
     font-family: $interiart-font;
-    color:  white;
+    color:  $white-color;
     background: $theme-color;
     border:solid 1px $theme-color;
     padding: 12px 25px;
@@ -73,7 +73,7 @@ img{
 }
 
 .service-page-btn:hover{
-    background: gray;
+    background: $btn-hover-background;
 }
 
 .service-title{
