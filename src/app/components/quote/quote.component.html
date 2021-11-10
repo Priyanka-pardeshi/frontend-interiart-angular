@@ -1,46 +1,50 @@
 <div class="main-quote">
     <div class="form-class">
-        <h4> GET A QUOTE<hr></h4>
+        <h4> GET A QUOTE
+            <hr>
+        </h4>
         <form [formGroup]="quoteForm" (ngSubmit)="onSubmit()">
-            <input  type="text" placeholder="Enter your name" formControlName="name">
+            <input type="text" placeholder="Enter your name" formControlName="name">
             <div *ngIf="f.name.invalid && submitted" class="alert-error">
                 <div *ngIf="f.name.errors?.required">
                     <p>Enter valid name</p>
                 </div>
-                </div>
-
-            <input type="text" placeholder="Enter phone number" formControlName="number">
-
+            </div>
+            <div class="input-icons">
+                <input type="text" placeholder="Enter phone number" formControlName="phone">
+            </div>
             <input type="email" placeholder="Enter your email" formControlName="email">
+            <!--email, phone -->
             <br>
             <select name="Property" formControlName="property">
                 <option value="">property</option>
-                <option value="aa">Gov</option>
-                <option value="aa">property</option>
+                <option value="Goverment">Gov</option>
+                <option value="Private">property</option>
             </select><br>
             <div *ngIf="f.property.invalid && submitted" class="alert-error">
                 <div *ngIf="f.property.errors?.required">
                     <p>Select property</p>
                 </div>
-                </div>
+            </div>
 
             <select name="Service" required formControlName="service">
+
                 <option value="">Services</option>
-                <option value="bb">Gov</option>
-                <option value="bb">property</option>
+                <option value="Goverment">Gov</option>
+                <option value="Private">property</option>
             </select>
             <div *ngIf="f.service.invalid && submitted" class="alert-error">
                 <div *ngIf="f.service.errors?.required">
                     <p>Select Service</p>
                 </div>
-                </div>
+            </div>
 
-            <textarea name="" formControlName="message" id="" cols="40" rows="2">Message</textarea>
+            <textarea placeholder="Message" formControlName="message" id="" cols="40" rows="2">Message</textarea>
             <div *ngIf="f.message.invalid && submitted" class="alert-error">
                 <div *ngIf="f.message.errors?.required">
                     <p>Enter the messages</p>
                 </div>
-                </div>
+            </div>
             <button class="quote-btn">Submit</button>
         </form>
     </div>

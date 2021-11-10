@@ -19,7 +19,11 @@
     padding-top: 120px;
     padding-left: 75px;
     color: white;
-    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: $interiart-font;
+    p{
+        font-size: 12px;
+        line-height: 1.8;
+    }
 }
 .service-info{
     font-size: 12px;
@@ -56,10 +60,10 @@ img{
 }
 
 .service-page-btn{
-    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;;
+    font-family: $interiart-font;
     color:  white;
-    background: orangered;
-    border:solid 1px orangered;
+    background: $theme-color;
+    border:solid 1px $theme-color;
     padding: 12px 25px;
     font-size: 12px;
     line-height: 11px;
@@ -82,4 +86,7 @@ img{
            @include line();
         }
     }
+}
+.title-service-icon:hover{
+    color: $theme-color;
 }

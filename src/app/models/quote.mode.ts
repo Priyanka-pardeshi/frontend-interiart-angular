@@ -1,6 +1,6 @@
 export interface quotes{
     name:string;
-    number:number;
+    phone:number;
     email:string;
     property:string;
     service:string;
