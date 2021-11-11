@@ -17,9 +17,9 @@ submitted = false;
 
   ngOnInit() {
     this.quoteForm=this.fb.group({
-      name:['',Validators.required],
+      name:['',[Validators.required,Validators.minLength]],
       phone:['',Validators.required],
-      email:['',Validators.required,Validators.pattern("^[0-9a-zA-Z]+([.,+,_,-]{1}[0-9a-zA-Z]+)*@[0-9a-zA-Z]+[.]{1}[a-zA-Z]{2,3}([.]{1}[a-zA-Z]{2})?")],
+      email:['',[Validators.required,Validators.email]],
       property:['',Validators.required],
       service:['',Validators.required],
       message:['',Validators.required]
@@ -40,6 +40,7 @@ submitted = false;
     }
     //alert('SUCCESS!! \n\n' + JSON.stringify(this.quoteForm.value, null, 4));
     console.log(this.quoteForm.value);
+    this.quoteForm.reset();
   }
 
   get f() {

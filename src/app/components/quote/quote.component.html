@@ -4,50 +4,79 @@
             <hr>
         </h4>
         <form [formGroup]="quoteForm" (ngSubmit)="onSubmit()">
-            <input type="text" placeholder="Enter your name" formControlName="name">
-            <div *ngIf="f.name.invalid && submitted" class="alert-error">
-                <div *ngIf="f.name.errors?.required">
-                    <p>Enter valid name</p>
-                </div>
+            <!-- name -->
+            <div class="input-icon">
+                <span class="lnr lnr-user"></span>
+                <input type="text" placeholder="Enter your name" formControlName="name">
             </div>
-            <div class="input-icons">
+                <div *ngIf="f.name.invalid && submitted" class="alert-error">
+                    <div *ngIf="f.name.errors?.required"><p>Enter valid name.</p></div>
+                    <div *ngIf="f.name.errors?.minlength"><p>name shouldbe more then 3 chara.</p></div>
+
+                </div>
+            
+            <!-- phone -->
+            <div class="input-icon">
+                <span class="lnr lnr-phone-handset"></span>
                 <input type="text" placeholder="Enter phone number" formControlName="phone">
+                <div *ngIf="f.phone.invalid && submitted" class="alert-error">
+                    <div *ngIf="f.phone.errors?.required"><p>Phone number is required</p></div>
+                </div>
             </div>
-            <input type="email" placeholder="Enter your email" formControlName="email">
-            <div *ngIf="f.email.errors?.pattern">
-                <p>invalid email</p>
+
+            <!-- email -->
+            <div class="input-icon">
+                <span class="lnr lnr-envelope"></span>
+                <input type="email" placeholder="Enter your email" formControlName="email">
             </div>
-            <!--email, phone -->
+            <div *ngIf="f.email.invalid && submitted" class="alert-error">
+                <div *ngIf="f.email.errors?.required"><p>Email is required.</p></div>
+                <div *ngIf="f.email.errors?.email"><p>Enter valid email..</p></div>
+
+            </div>
+        
+            
+            <!--property -->
             <br>
-            <select name="Property" formControlName="property">
-                <option value="">property</option>
-                <option value="Goverment">Gov</option>
-                <option value="Private">property</option>
-            </select><br>
+            <div class="input-icon">
+                <span class="lnr lnr-home"></span>
+                <select name="Property" formControlName="property">
+                    <option value="">property</option>
+                    <option value="Goverment">Gov</option>
+                    <option value="Private">property</option>
+                </select>
+                <br>
+            </div>
             <div *ngIf="f.property.invalid && submitted" class="alert-error">
-                <div *ngIf="f.property.errors?.required">
-                    <p>Select property</p>
-                </div>
+                <div *ngIf="f.property.errors?.required"><p>Select valid property</p></div>
             </div>
-
-            <select name="Service" required formControlName="service">
-
-                <option value="">Services</option>
-                <option value="Goverment">Gov</option>
-                <option value="Private">property</option>
-            </select>
-            <div *ngIf="f.service.invalid && submitted" class="alert-error">
-                <div *ngIf="f.service.errors?.required">
-                    <p>Select Service</p>
-                </div>
+        
+            <!-- service -->
+            <div class="input-icon">
+                <span class="lnr lnr-cog"></span>
+                <select name="Service" required formControlName="service">
+                    <option value="">Services</option>
+                    <option value="Goverment">Gov</option>
+                    <option value="Private">property</option>
+                </select>
             </div>
-
-            <textarea placeholder="Message" formControlName="message" id="" cols="40" rows="2">Message</textarea>
-            <div *ngIf="f.message.invalid && submitted" class="alert-error">
-                <div *ngIf="f.message.errors?.required">
-                    <p>Enter the messages</p>
+                <div *ngIf="f.service.invalid && submitted" class="alert-error">
+                    <div *ngIf="f.service.errors?.required">
+                        <p>Select Service</p>
+                    </div>
                 </div>
+        
+            <!-- message -->
+            <div class="input-icon-message">
+                <span class="lnr lnr-leaf"></span>
+                <textarea placeholder="Message" formControlName="message" id="" cols="32" rows="1">Message</textarea>
             </div>
+                <div *ngIf="f.message.invalid && submitted" class="alert-error">
+                    <div *ngIf="f.message.errors?.required">
+                        <p>Enter the messages</p>
+                    </div>
+                </div>
+            
             <button class="quote-btn">Submit</button>
         </form>
     </div>

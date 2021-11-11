@@ -1,5 +1,8 @@
 @import "../../shared/veriables";
 @import "../../shared/mixin";
+html,body,a,h1{
+    font-family: $interiart-font;
+}
 
 // .main-logo{
 //     text-align: center;
