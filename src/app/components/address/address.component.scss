@@ -4,9 +4,9 @@
 .address{
     height: 35px;
     width: 98%;
-    border: solid 1px black;
-    padding-left: 40px;
-    background-color:  #343a40;
+    border: solid 1px #343a40;
+    padding-left: 15px;
+    background-color:  #333;
     color: $white-color;
 
     display: flex;
@@ -20,7 +20,17 @@
         margin-top: 10px;
         font-family:$interiart-font;
         font-size: 12px;
-      
+    }
+    p:hover{
+        color: $theme-color
+    }
+}
+.address{
+    .address-text{
+        span{
+            padding: 4px;
+            color: $theme-color;
+        }
     }
 }
 .contact-menu{

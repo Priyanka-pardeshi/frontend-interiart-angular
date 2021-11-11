@@ -5,8 +5,9 @@
     </div>
     <ul>
 
-        <li><a style="color: red;" href="">HOME</a></li>
-        <li id="about" (click)="toAbout()"> <a>ABOUT</a></li>
+        <li><a style="color: red;" >HOME</a></li>
+        <li id="about" (click)="myElement.scrollIntoView({ behavior: 'smooth', block: 'start' })"> <a>ABOUT</a></li>
+        <!-- create function -->
         <li><a [routerLink]="['/', 'service']">SERVICE</a></li>
         <li><a href="#">PORTFOLIO</a></li>  
         <li><a href="#">NEWS</a></li>
