@@ -13,7 +13,8 @@ import { TempComponent } from './components/temp/temp.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { MenuComponent } from './components/menu/menu.component';
-import { AddressComponent } from './components/address/address.component';
+import { PortpholioComponent } from './components/portpholio/portpholio.component';
+
 
 
 @NgModule({
@@ -25,7 +26,7 @@ import { AddressComponent } from './components/address/address.component';
     QuoteServiceComponent,
     TempComponent,
     MenuComponent,
-    AddressComponent
+    PortpholioComponent
   ],
   imports: [
     BrowserModule,

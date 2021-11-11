@@ -50,3 +50,61 @@
             color: $theme-color;
         }}}
 
+        
+.address{
+    height: 35px;
+    width: 98%;
+    border: solid 1px #343a40;
+    padding-left: 15px;
+    background-color:  #333;
+    color: $white-color;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    }
+    .address{
+        p{
+            margin-top: 10px;
+            font-family:$interiart-font;
+            font-size: 12px;
+        }
+        p:hover{
+        color: $theme-color
+            }
+        }
+        .address{
+            .address-text{
+                span{
+                    padding: 4px;
+                    color: $theme-color;
+                }
+            }
+        }
+        .contact-menu{
+            ul{
+                position: absolute;
+                right: 100px;
+                margin-top: 10px;
+                font-size: 12px;
+                li{
+                    margin-top: 15px;
+                    display: inline;
+                    color:$black-color;
+                    text-decoration: none;
+                    padding: 7px;
+                    display: inline;
+                }
+            
+            }
+        }
+        .contact-menu{
+            ul{
+                li{
+                    .fa:hover{
+                        color: $theme-color;
+                    }
+                }
+            }
+        }

@@ -1,3 +1,23 @@
+<!--  -->
+<div class="address">
+    <p class="address-text"><span class="lnr lnr-map-marker"></span>Address:4578 Armora road, Glasgow 84D 890 | <span class="lnr lnr-phone-handset"></span>(800)976-8263</p>
+    <div class="contact-menu">
+        <ul>
+            <li>
+                <i class="fa fa-facebook" style="color:white"></i></li>
+            <li>
+                <i class="fa fa-twitter" style="color:white"></i>
+            </li>
+            <li>
+                <i class="fa fa-youtube" style="color: white;"></i>
+            </li>
+            <li>
+                <i class="fa fa-google-plus" style="color: white;"></i>
+            </li>
+            <li><i class="fa fa-pinterest" style="color:white"></i></li>
+        </ul>
+    </div>
+</div>
 
 <div class="menu-container">
     <div class="second-logo">
@@ -5,11 +25,13 @@
     </div>
     <ul>
 
-        <li><a style="color: red;" >HOME</a></li>
-        <li id="about" (click)="myElement.scrollIntoView({ behavior: 'smooth', block: 'start' })"> <a>ABOUT</a></li>
-        <!-- create function -->
-        <li><a [routerLink]="['/', 'service']">SERVICE</a></li>
+        <li><a style="color: red;" (click)="toHome()">HOME</a></li>
+        <li (click)="toAbout()"> <a>ABOUT</a></li>
+        <li><a (click)="toService()">SERVICE</a></li>
         <li><a href="#">PORTFOLIO</a></li>  
+        <li><a href="#">TESTIMONAL</a></li>  
+        <li><a href="#">TEAM</a></li>  
         <li><a href="#">NEWS</a></li>
+        <li><a href="#">CONTACTUS</a></li>  
     </ul>
 </div>

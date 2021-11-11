@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutInteriartComponent } from './components/about-interiart/about-interiart.component';
-import { AddressComponent } from './components/address/address.component';
+
 import { HomeComponent } from './components/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { PortpholioComponent } from './components/portpholio/portpholio.component';
 import { QuoteServiceComponent } from './components/quote-service/quote-service.component';
 import { QuoteComponent } from './components/quote/quote.component';
 import { TempComponent } from './components/temp/temp.component';
@@ -31,7 +32,7 @@ const routes: Routes = [
     path:'menu',component:MenuComponent
   },
   {
-    path:'address',component:AddressComponent 
+    path:'port',component:PortpholioComponent
   }
 ];
 
