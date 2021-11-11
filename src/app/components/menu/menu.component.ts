@@ -13,7 +13,5 @@ export class MenuComponent implements OnInit {
   
   }
   
-  toAbout(){
-    document.getElementById("about").scrollIntoView({behavior:"smooth"});
-  }
+  
 }

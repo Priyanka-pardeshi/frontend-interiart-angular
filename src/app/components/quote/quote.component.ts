@@ -38,7 +38,8 @@ submitted = false;
         
       )
     }
-    alert('SUCCESS!! \n\n' + JSON.stringify(this.quoteForm.value, null, 4));
+    //alert('SUCCESS!! \n\n' + JSON.stringify(this.quoteForm.value, null, 4));
+    console.log(this.quoteForm.value);
   }
 
   get f() {
