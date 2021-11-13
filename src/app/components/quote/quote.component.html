@@ -28,16 +28,16 @@
             <div class="input-icon">
                 <span class="lnr lnr-envelope"></span>
                 <input type="email" placeholder="Enter your email" formControlName="email">
-            </div>
+       
             <div *ngIf="f.email.invalid && submitted" class="alert-error">
                 <div *ngIf="f.email.errors?.required"><p>Email is required.</p></div>
                 <div *ngIf="f.email.errors?.email"><p>Enter valid email..</p></div>
 
             </div>
-        
+        </div>
             
             <!--property -->
-            <br>
+      
             <div class="input-icon">
                 <span class="lnr lnr-home"></span>
                 <select name="Property" formControlName="property">
@@ -69,7 +69,7 @@
             <!-- message -->
             <div class="input-icon-message">
                 <span class="lnr lnr-leaf"></span>
-                <textarea placeholder="Message" formControlName="message" id="" cols="32" rows="1">Message</textarea>
+                <textarea placeholder="Message" formControlName="message" id="" cols="30" rows="1">Message</textarea>
             </div>
                 <div *ngIf="f.message.invalid && submitted" class="alert-error">
                     <div *ngIf="f.message.errors?.required">

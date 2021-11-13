@@ -1,11 +1,14 @@
 @import "../../shared/veriables";
 @import "../../shared/mixin";
 
+
+*{
+    font-family: $interiart-font;
+}
 .about-container{
     display: flex;
     flex-wrap: wrap;
-    width: 197%;
-    height: 75vh;
+    height: 85vh;
     //border:  solid 1px black;
     padding-right: 15px;
     padding-left: 15px;
@@ -16,16 +19,16 @@
 .aboutus{
     height: 342px;
     width: 364px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
-    font-family:$interiart-font;
+    //font-family:$interiart-font;
     padding-right: 15px;
     text-align: left;
     margin-left: 35px;
    // border: solid 1px black;
 }
 .about-btn{
-    font-family: $interiart-font;
+    // font-family: $interiart-font;
     color:  $white-color;
     background: $theme-color;
     border:solid $theme-color;
@@ -33,6 +36,7 @@
     font-size: 12px;
     line-height: 11px;
     margin: 15px;
+    margin-left: 0px;
     transition: 0.6ms;
     
 
@@ -45,10 +49,9 @@
     width: 330px;
     text-align: center;
     font-size: 14px;
-    padding-left: 15px;
+    margin-left: 25px;
     padding-right: 15px;
-    
-    font-family:$interiart-font;
+    // font-family:$interiart-font;
     //border: solid 1px black;
 }
 .about-info{
@@ -68,7 +71,7 @@ img{
 .background{
 
     background:$white-color;
-    height: 185px;
+    height: 205px;
     width: 330px;
     margin-top: -12px;
     padding-top: 30px;
@@ -83,13 +86,14 @@ img{
         text-align: center;
         padding-left: 30px;
         padding-right: 30px;
+        margin-bottom: 6px;
         line-height: 2;
         font-size: 12px;
     }
 }
 
 .info-btn{
-    font-family: $interiart-font;
+    // font-family: $interiart-font;
     color:  $white-color;
     background: $theme-color;
     border:solid $theme-color;
