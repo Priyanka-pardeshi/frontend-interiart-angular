@@ -4,12 +4,6 @@ html,body,a,h1{
     font-family: $interiart-font;
 }
 
-// .main-logo{
-//     text-align: center;
-//     color: $theme-color;
-//     font-size: 18ppx;
-    
-// }
 
 .address{
     height: 35px;
@@ -33,12 +27,7 @@ html,body,a,h1{
     }
 }
 
-// .menu{
-//     position: -webkit-sticky;
-//     position: sticky;
-//     top: 0;
-//     z-index: 3;
-// }
+
 
 .img-container{
     background: linear-gradient(to top,rgba(0,0,0,0.5)100%,rgba(0,0,0,0.5)100%), url(https://images.unsplash.com/photo-1611838637971-2b137f0ebfaf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvdXNlJTIwZGVjb3JhdGlvbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
@@ -49,7 +38,7 @@ html,body,a,h1{
 }
 .img-container{
     h2{
-        padding-top: 250px;
+        padding-top: 340px;
         padding-left: 75px;
         color: $white-color;
         font-size: 44px;

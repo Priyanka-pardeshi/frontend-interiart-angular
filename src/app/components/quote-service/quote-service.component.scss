@@ -34,7 +34,7 @@
 }
 .icons-list{
 
-    width: 550px;
+    width: 650px;
     height: 485px;
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +44,7 @@
 
 .icons{
     height: 150px;
-    width: 221px;
+    width: 270px;
     align-items: center;
     // border: solid 1px red;
     margin-left: 50px;
@@ -61,6 +61,7 @@ img{
 
 .title-service-icon{
     font-size: 16px;
+    font-weight: 400;
 }
 
 .service-page-btn{
@@ -72,6 +73,7 @@ img{
     font-size: 12px;
     line-height: 11px;
     margin: 15px;
+    margin-left: 0px;
     border: none;
 
 }

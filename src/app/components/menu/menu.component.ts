@@ -12,13 +12,16 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   
   }
-  toHome(){
-    document.getElementById("home").scrollIntoView({behavior:"smooth"});
+  jumpTo(path:string):void{
+    document.getElementById(path).scrollIntoView({behavior:"smooth"});
   }
-  toAbout(){
-    document.getElementById("about").scrollIntoView({behavior:"smooth"});
-  }
-  toService(){
-    document.getElementById("interiart-service").scrollIntoView({behavior:"smooth"});
-  }
+  // toHome(){
+  //   document.getElementById("home").scrollIntoView({behavior:"smooth"});
+  // }
+  // toAbout(){
+  //   document.getElementById("about").scrollIntoView({behavior:"smooth"});
+  // }
+  // toService(){
+  //   document.getElementById("interiart-service").scrollIntoView({behavior:"smooth"});
+  // }
 }

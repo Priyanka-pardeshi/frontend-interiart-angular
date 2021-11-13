@@ -11,10 +11,10 @@
 
 .form-class{
     width: 300px;
-    height: 490px;
+    height: 500px;
     background:linear-gradient(to top, rgba(255, 255, 255)100%,rgba(255, 255, 255, 0)100%);
     position: absolute;
-    top: 237px;
+    top: 230px;
     right: 55px;
     padding: 18px;
 }
@@ -28,7 +28,7 @@ input{
     margin-top: 25px;
     border: none;
     font-size: 12px;
-    width: 235px;
+     width: 185px;
     border: none;
 }
 select{
@@ -36,8 +36,8 @@ select{
     background:$input-background-color;
   
     margin: 10px;
-    margin-top: 25px;
-    width: 235px;
+    margin-top: 20px;
+    width: 195px;
     border: none;
 }
 .quote-btn{
@@ -49,11 +49,12 @@ select{
     font-size: 12px;
     line-height: 11px;
     margin: 15px;
+    margin-left: 0px;
     border: none;
 
 }
 .alert-error{
-    font-size: 10px;
+    font-size: 8px;
     margin-top: 0px;
     color: $alert-text;
 
@@ -75,8 +76,7 @@ form{
         margin-left: 10px;
         background: $input-background-color;
         padding-left: 9px;
-        padding-top: 9px;
-        margin-top: 25px;
+     
         border: $input-background-color;
         font-family: $interiart-font;
     }

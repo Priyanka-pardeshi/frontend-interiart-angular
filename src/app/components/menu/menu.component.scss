@@ -52,8 +52,8 @@
 
         
 .address{
-    height: 35px;
-    width: 98%;
+    height: 38px;
+    
     border: solid 1px #343a40;
     padding-left: 15px;
     background-color:  #333;
@@ -62,7 +62,7 @@
     justify-content: space-between;
     position: sticky;
     top: 0px;
-    z-index: 1;
+
     }
     .address{
         p{
@@ -82,29 +82,31 @@
                 }
             }
         }
-        .contact-menu{
-            ul{
-                position: absolute;
-                right: 100px;
-                margin-top: 10px;
-                font-size: 12px;
-                li{
-                    margin-top: 15px;
-                    display: inline;
-                    color:$black-color;
-                    text-decoration: none;
-                    padding: 7px;
-                    display: inline;
-                }
-            
+.contact-menu{
+    ul{
+        position: absolute;
+        right: 100px;
+        margin-top: 10px;
+        font-size: 12px;
+        z-index: 1;
+        li{
+            margin-top: 15px;
+            display: inline;
+            text-decoration: none;
+            padding: 7px;
+            display: inline;
+            z-index: 1;
             }
-        }
-        .contact-menu{
-            ul{
-                li{
-                    .fa:hover{
-                        color: $theme-color;
-                    }
-                }
-            }
-        }
+    }
+}
+        // .contact-menu{
+        //     ul{
+        //         li{
+        //             i{
+        //                 .fa:hover{
+        //                     color: $theme-color;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
