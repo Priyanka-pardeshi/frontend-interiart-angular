@@ -1,0 +1,35 @@
+<div class="main-quote">
+    <div class="form-class">
+        <h4> GET A QUOTE
+            <hr>
+        </h4>
+        <form [formGroup]="quoteForm" (ngSubmit)="onSubmit()">
+            <!-- name -->
+            <div class="fields">
+                <input type="text" placeholder="Name" formControlName="name">
+                <span *ngIf="f.name.invalid && submitted" class="alert-error">
+                    <span *ngIf="f.name.errors?.required">
+                        <p>Enter valid name.</p>
+                    </span>
+                </span>
+            </div>
+
+
+            <!-- <div class="input-icon">
+                <span class="lnr lnr-user"></span>
+                <input type="text" placeholder="Enter your name" formControlName="name">
+
+                <div *ngIf="f.name.invalid && submitted" class="alert-error">
+                    <div *ngIf="f.name.errors?.required">
+                        <p>Enter valid name.</p>
+                    </div>
+                    <div *ngIf="f.name.errors?.minlength">
+                        <p>name shouldbe more then 3 chara.</p>
+                    </div>
+                </div>
+            </div> -->
+
+            <button class="quote-btn">Submit</button>
+        </form>
+    </div>
+</div>
