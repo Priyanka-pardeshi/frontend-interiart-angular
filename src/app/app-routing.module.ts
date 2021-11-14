@@ -8,6 +8,7 @@ import { PortpholioComponent } from './components/portpholio/portpholio.componen
 import { QuoteServiceComponent } from './components/quote-service/quote-service.component';
 import { QuoteComponent } from './components/quote/quote.component';
 import { TempComponent } from './components/temp/temp.component';
+import { TempcompComponent } from './components/tempcomp/tempcomp.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,9 @@ const routes: Routes = [
   },
   {
     path:'port',component:PortpholioComponent
+  },
+  {
+    path:'see',component:TempcompComponent
   }
 ];
 

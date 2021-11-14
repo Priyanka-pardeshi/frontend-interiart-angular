@@ -10,12 +10,12 @@
 }
 
 .form-class{
-    width: 300px;
-    height: 500px;
+    width: 330px;
+    height: 520px;
     background:linear-gradient(to top, rgba(255, 255, 255)100%,rgba(255, 255, 255, 0)100%);
     position: absolute;
     top: 230px;
-    right: 55px;
+    right: 65px;
     padding: 18px;
 }
 
@@ -25,19 +25,20 @@ input{
     font-family: $interiart-font;
     background: $input-background-color;
     margin: 10px;
-    margin-top: 25px;
+    margin-top: 30px;
     border: none;
     font-size: 12px;
-     width: 185px;
+    width: 234px;
     border: none;
 }
 select{
     font-family: $interiart-font;
     background:$input-background-color;
-  
+    font-size: 12px;
     margin: 10px;
-    margin-top: 20px;
-    width: 195px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 232px;
     border: none;
 }
 .quote-btn{
@@ -59,9 +60,11 @@ select{
     color: $alert-text;
 
     p{
-        margin-top: -7px;
+        margin-top: -41px;
         margin-bottom: 0px;
         padding-left: 10px;
+        position: absolute;
+        right: 14px;
     }
 }
 .form-class{
@@ -74,6 +77,8 @@ select{
 form{
     textarea{
         margin-left: 10px;
+        height: 33px;
+        width: 265px;
         background: $input-background-color;
         padding-left: 9px;
      

@@ -7,7 +7,7 @@
             <!-- name -->
             <div class="input-icon">
                 <span class="lnr lnr-user"></span>
-                <input type="text" placeholder="Enter your name" formControlName="name">
+                <input type="text" placeholder="Your name" formControlName="name">
             </div>
                 <div *ngIf="f.name.invalid && submitted" class="alert-error">
                     <div *ngIf="f.name.errors?.required"><p>Enter valid name.</p></div>
@@ -18,7 +18,7 @@
             <!-- phone -->
             <div class="input-icon">
                 <span class="lnr lnr-phone-handset"></span>
-                <input type="text" placeholder="Enter phone number" formControlName="phone">
+                <input type="text" placeholder="Your phone" formControlName="phone">
                 <div *ngIf="f.phone.invalid && submitted" class="alert-error">
                     <div *ngIf="f.phone.errors?.required"><p>Phone number is required</p></div>
                 </div>
@@ -27,7 +27,7 @@
             <!-- email -->
             <div class="input-icon">
                 <span class="lnr lnr-envelope"></span>
-                <input type="email" placeholder="Enter your email" formControlName="email">
+                <input type="email" placeholder="Your e-mail" formControlName="email">
        
             <div *ngIf="f.email.invalid && submitted" class="alert-error">
                 <div *ngIf="f.email.errors?.required"><p>Email is required.</p></div>
@@ -41,9 +41,9 @@
             <div class="input-icon">
                 <span class="lnr lnr-home"></span>
                 <select name="Property" formControlName="property">
-                    <option value="">property</option>
-                    <option value="Goverment">Gov</option>
-                    <option value="Private">property</option>
+                    <option value="">Type of Property</option>
+                    <option value="Recidential">RECIDENTIAL</option>
+                    <option value="Commercial">COMMERCIAL</option>
                 </select>
                 <br>
             </div>
@@ -55,9 +55,12 @@
             <div class="input-icon">
                 <span class="lnr lnr-cog"></span>
                 <select name="Service" required formControlName="service">
-                    <option value="">Services</option>
-                    <option value="Goverment">Gov</option>
-                    <option value="Private">property</option>
+                    <option value=""><p>Type of Services</p></option>
+                    <option value="Interial design">Interial Design</option>
+                    <option value="Space Planing">Space Planing</option>
+                    <option value="Ligiting">Ligiting</option>
+                    <option value="Decorative Service">Decorative Service</option>
+                    <option value="Project Management">Project Management</option>
                 </select>
             </div>
                 <div *ngIf="f.service.invalid && submitted" class="alert-error">
@@ -69,7 +72,7 @@
             <!-- message -->
             <div class="input-icon-message">
                 <span class="lnr lnr-leaf"></span>
-                <textarea placeholder="Message" formControlName="message" id="" cols="30" rows="1">Message</textarea>
+                <textarea placeholder="Message" formControlName="message" id="" cols="30" rows="1"><p>Your Message </p></textarea>
             </div>
                 <div *ngIf="f.message.invalid && submitted" class="alert-error">
                     <div *ngIf="f.message.errors?.required">
