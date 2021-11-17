@@ -1,5 +1,10 @@
 @import "../../shared/veriables";
 @import "../../shared/mixin";
+@media (min-width: 500px) {
+    .menu-container{
+        display: block;
+    }
+}
 
 .menu-container{
     display: flex;
@@ -16,12 +21,15 @@
     padding-right: 50px;
     background: $white-color;
 }
-
+a:hover, a:focus{
+    color: $theme-color;
+}
 .menu-container{
     li{
         display: inline;
         list-style: none;
         font-size: 13px;
+        
         a{
             display: inline-block;
             padding: 0em 1.5em;
@@ -45,10 +53,14 @@
 }
 
 .menu-container{
+   
     li{
-        a:hover{
-            color: $theme-color;
-        }}}
+        
+          .target:hover, .target:focus{
+              color: $theme-color;
+          }
+    }
+}
 
         
 .address{
@@ -74,6 +86,7 @@
         color: $theme-color
             }
         }
+      
         .address{
             .address-text{
                 span{
@@ -99,14 +112,4 @@
             }
     }
 }
-        // .contact-menu{
-        //     ul{
-        //         li{
-        //             i{
-        //                 .fa:hover{
-        //                     color: $theme-color;
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
+    
