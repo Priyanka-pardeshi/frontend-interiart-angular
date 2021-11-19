@@ -8,20 +8,17 @@
 .service-container{
     width: 100%;
     background: linear-gradient(to top,rgba(0,0,0,0.5)100%,rgba(0,0,0,0.5)100%), url(https://images.unsplash.com/photo-1611838637971-2b137f0ebfaf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvdXNlJTIwZGVjb3JhdGlvbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
-   /** background-position: center;*/
     background-size: cover;
-    /**height of image*/
     height: 90vh;
     display: flex;
     flex-wrap: wrap;
 }
 .our-service{
     height: 350px;
-    width: 500px;
-    /**border: solid 1px gray;*/
+    width: 450px;
     margin-top: -10px;
     padding-top: 120px;
-    padding-left: 75px;
+    margin-left: 100px;
     color: $white-color;
     font-family: $interiart-font;
     p{
@@ -44,7 +41,7 @@
 
 .icons{
     height: 150px;
-    width: 270px;
+    width: 260px;
     align-items: center;
     // border: solid 1px red;
     margin-left: 50px;
@@ -69,7 +66,7 @@ img{
     color:  $white-color;
     background: $theme-color;
     border:solid 1px $theme-color;
-    padding: 12px 25px;
+    padding: 10px 25px;
     font-size: 12px;
     line-height: 11px;
     margin: 15px;

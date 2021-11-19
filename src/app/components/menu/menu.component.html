@@ -1,10 +1,12 @@
 <!--  -->
 <div class="address">
-    <p class="address-text"><span class="lnr lnr-map-marker"></span>Address:4578 Armora road, Glasgow 84D 890 | <span class="lnr lnr-phone-handset"></span>(800)976-8263</p>
+    <p class="address-text"><span class="lnr lnr-map-marker"></span>Address:4578 Armora road, Glasgow 84D 890 | <span
+            class="lnr lnr-phone-handset"></span>(800)976-8263</p>
     <div class="contact-menu">
         <ul>
             <li>
-                <i class="fa fa-facebook" style="color:white"></i></li>
+                <i class="fa fa-facebook" style="color:white"></i>
+            </li>
             <li>
                 <i class="fa fa-twitter" style="color:white"></i>
             </li>
@@ -24,14 +26,9 @@
         <img src="/assets/logo-interiart.png" alt="Oopse cant load logo">
     </div>
     <ul>
-
-        <li><a  class='target' tabindex="1" (click)="jumpTo('home')">HOME</a></li>
-        <li (click)="jumpTo('about')"> <a class='target' tabindex="1">ABOUT</a></li>
-        <li><a class='target' tabindex="1" (click)="jumpTo('interiart-service')">SERVICE</a></li>
-        <li><a class='target' tabindex="1" (click)="jumpTo('portfolio')">PORTFOLIO</a></li>  
-        <li><a href="#">TESTIMONAL</a></li>  
-        <li><a href="#">TEAM</a></li>  
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">CONTACTUS</a></li>  
+        <ng-container *ngFor="let item of navrbarItems">
+            <li><a class='target' tabindex="1" [ngClass]="item.isSelected? 'selected-state': 'default-state'" (click)="jumpTo(item.route)">{{item.title}}</a></li>
+        </ng-container>
+       
     </ul>
 </div>

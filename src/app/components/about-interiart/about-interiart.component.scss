@@ -9,7 +9,6 @@
     display: flex;
     flex-wrap: wrap;
     height: 85vh;
-    //border:  solid 1px black;
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 75px;
@@ -18,21 +17,18 @@
 }
 .aboutus{
     height: 342px;
-    width: 364px;
+    width: 370px;
     font-size: 12px;
     line-height: 1.5;
-    //font-family:$interiart-font;
     padding-right: 15px;
     text-align: left;
-    margin-left: 35px;
-   // border: solid 1px black;
+    margin-left: 90px;
 }
 .about-btn{
-    // font-family: $interiart-font;
     color:  $white-color;
     background: $theme-color;
     border:solid $theme-color;
-    padding: 12px 25px;
+    padding: 8px 25px;
     font-size: 12px;
     line-height: 11px;
     margin: 15px;
@@ -42,40 +38,33 @@
 
 }.about-btn:hover{
     background:$btn-hover-background;
+    border: $btn-hover-background;
 }
 
 .about-info{
     height: 477px;
-    width: 330px;
+    width: 300px;
     text-align: center;
     font-size: 14px;
     margin-left: 25px;
     padding-right: 15px;
-    // font-family:$interiart-font;
-    //border: solid 1px black;
-}
-.about-info{
-img{
-    height: 196px;
-    width: 330px;
-}
-}
-
-.about-info{
+    img{
+        height: 196px;
+        width: 300px;
+    }
     .background{
         h1{
             font-size: 15px;
         }
     }
 }
-.background{
 
+.background{
     background:$white-color;
     height: 205px;
-    width: 330px;
+    width: 300px;
     margin-top: -12px;
     padding-top: 30px;
-    
         h1:hover{
             color: $theme-color;
         }
@@ -93,11 +82,11 @@ img{
 }
 
 .info-btn{
-    // font-family: $interiart-font;
+   
     color:  $white-color;
     background: $theme-color;
     border:solid $theme-color;
-    padding: 12px 25px;
+    padding: 8px 20px;
     font-size: 12px;
     line-height: 11px;
   
@@ -107,6 +96,7 @@ img{
 }
 .info-btn:hover{
     background: $btn-hover-background;
+    border: $btn-hover-background;
 }
 
 .aboutus{

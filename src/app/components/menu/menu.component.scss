@@ -16,23 +16,26 @@
     font-family: $interiart-font;
      
     letter-spacing: .05em;
-    padding: 21px 0;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 21px 50px;
     background: $white-color;
-}
-a:hover, a:focus{
-    color: $theme-color;
-}
-.menu-container{
+    .second-logo{
+        padding-left: 58px;
+    }
+  ul {
+      padding-right: 40px;
     li{
         display: inline;
         list-style: none;
-        font-size: 13px;
+        font-size: 12px;
+        letter-spacing: .05em;    
+        &:hover, .selected-state {
+            color: $theme-color;
+            cursor: pointer;
+        }
         
         a{
             display: inline-block;
-            padding: 0em 1.5em;
+            padding: 10px 10px;
             text-decoration: none;
             text-transform: uppercase;
             color: $black-color;
@@ -41,31 +44,13 @@ a:hover, a:focus{
            
         }
     }
-}
-.menu-container{
-    ul{
-    
-    font-size: 12px;
-    letter-spacing: .05em;
-    
-    }
-
-}
-
-.menu-container{
-   
-    li{
-        
-          .target:hover, .target:focus{
-              color: $theme-color;
-          }
-    }
+  }
 }
 
         
 .address{
     height: 38px;
-    
+   
     border: solid 1px #343a40;
     padding-left: 15px;
     background-color:  #333;
@@ -79,6 +64,7 @@ a:hover, a:focus{
     .address{
         p{
             margin-top: 10px;
+            padding-left: 90px;
             font-family:$interiart-font;
             font-size: 12px;
         }
