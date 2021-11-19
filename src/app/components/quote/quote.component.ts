@@ -40,7 +40,7 @@ submitted = false;
     }
     //alert('SUCCESS!! \n\n' + JSON.stringify(this.quoteForm.value, null, 4));
     console.log(this.quoteForm.value);
-    this.quoteForm.reset();
+    //this.quoteForm.reset();
   }
 
   get f() {

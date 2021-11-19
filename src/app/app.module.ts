@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+// import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -15,7 +15,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { MenuComponent } from './components/menu/menu.component';
 import { PortpholioComponent } from './components/portpholio/portpholio.component';
 import { TempcompComponent } from './components/tempcomp/tempcomp.component';
-
 
 
 @NgModule({
@@ -35,7 +34,9 @@ import { TempcompComponent } from './components/tempcomp/tempcomp.component';
     AppRoutingModule,
     FormsModule,ReactiveFormsModule,
     CommonModule,
-    HttpClientModule
+    // MatSnackBarModule,
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

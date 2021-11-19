@@ -33,8 +33,8 @@
     }
 }
 .port-menu{
+    margin-top: -30px;
     ul{
-    
     font-size: 12px;
     letter-spacing: .05em;
     
@@ -60,9 +60,10 @@
                 hr{   
                 padding-left: 30px;
                 width: 13%;
+                margin-top: 5px;
                 margin-left: 32px;
-                background: #db4e48;
-                border: solid 1px #db4e48
+                background:$theme-color;
+                border: solid 1px $theme-color;
                 }
             }
         }
