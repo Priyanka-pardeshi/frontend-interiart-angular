@@ -10,7 +10,7 @@
     display: flex;
     position: absolute;
     top:37px;
-    width: -webkit-fill-available;
+     width: -webkit-fill-available;
     align-items: center;
     justify-content: space-between;
     font-family: $interiart-font;
@@ -19,7 +19,7 @@
     padding: 21px 50px;
     background: $white-color;
     .second-logo{
-        padding-left: 58px;
+        padding-left: 110px;
     }
   ul {
       padding-right: 40px;
@@ -87,15 +87,61 @@
         right: 100px;
         margin-top: 10px;
         font-size: 12px;
-        z-index: 1;
+        //z-index: 1;
         li{
             margin-top: 15px;
             display: inline;
             text-decoration: none;
             padding: 7px;
             display: inline;
-            z-index: 1;
+            //z-index: 1;
             }
     }
 }
     
+@media screen and(max-width:375px) {
+    .address{
+        p{
+           margin-top: 0px;
+           padding-left: 0px;
+        }
+    }  
+    .contact-menu{
+        ul{
+            margin-top: 15px;
+            position: absolute;
+            right: 15px;
+        }
+    }  
+    }
+
+@media only screen and (max-width: 414px) {
+    .menu-container{
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        ul{
+            display: flex;
+            justify-content: left;
+            li{
+                a{
+                    padding: 10px 4px;
+                }
+            }
+        }
+        .second-logo{
+            display: none;
+            // padding: 0px;
+        }
+    }
+    .address{
+        
+        p{
+        margin-top: 0px;
+        padding-left: 0px;
+        }
+    }
+   
+    
+ }

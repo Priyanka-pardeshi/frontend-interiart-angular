@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-// import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -15,6 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MenuComponent } from './components/menu/menu.component';
 import { PortpholioComponent } from './components/portpholio/portpholio.component';
 import { TempcompComponent } from './components/tempcomp/tempcomp.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -34,10 +36,14 @@ import { TempcompComponent } from './components/tempcomp/tempcomp.component';
     AppRoutingModule,
     FormsModule,ReactiveFormsModule,
     CommonModule,
-    // MatSnackBarModule,
+    MatSnackBarModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+  
     
   ],
+  exports:[QuoteComponent,AboutInteriartComponent,PortpholioComponent,QuoteServiceComponent],
+  schemas:[ CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })

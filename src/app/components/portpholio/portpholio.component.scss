@@ -1,6 +1,9 @@
 @import "../../shared/veriables";
 @import "../../shared/mixin";
 
+.main-port{
+height: 40vh;
+}
 .port-menu{
     width: -webkit-fill-available;
     align-items: center;
