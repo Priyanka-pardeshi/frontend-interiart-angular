@@ -18,7 +18,7 @@
     width: 450px;
     margin-top: -10px;
     padding-top: 120px;
-    margin-left: 100px;
+    margin-left: 150px;
     color: $white-color;
     font-family: $interiart-font;
     p{
@@ -31,19 +31,19 @@
 }
 .icons-list{
 
-    width: 650px;
+    width: 700px;
     height: 485px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    padding-left: 130px;
     // border: solid 1px red;
 }
 
 .icons{
     height: 150px;
-    width: 260px;
+    width: 235px;
     align-items: center;
-    // border: solid 1px red;
     margin-left: 50px;
     text-align: center;
     color: $white-color;
@@ -75,9 +75,9 @@ img{
 
 }
 
-.service-page-btn:hover{
-    background: $btn-hover-background;
-}
+// .service-page-btn:hover{
+//     background: $btn-hover-background;
+// }
 
 .service-title{
     h4{
@@ -92,4 +92,16 @@ img{
 }
 .title-service-icon:hover{
     color: $theme-color;
+}
+
+@media only screen and (max-width: 414px) {
+    .service-container{
+        height: 220vh;
+    }
+    .icons-list{
+        padding-left: 50px;
+    }
+    .our-service{
+        margin-left: 50px;
+    }
 }

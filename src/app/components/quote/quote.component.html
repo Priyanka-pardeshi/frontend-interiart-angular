@@ -9,35 +9,45 @@
                 <span class="lnr lnr-user"></span>
                 <input type="text" placeholder="Your name" formControlName="name">
             </div>
-                <div *ngIf="f.name.invalid && submitted" class="alert-error">
-                    <div *ngIf="f.name.errors?.required"><p>Enter valid name.</p></div>
-                    <div *ngIf="f.name.errors?.minlength"><p>name shouldbe more then 3 chara.</p></div>
-
+            <div *ngIf="f.name.invalid && f.name.touched" class="alert-error">
+                <div *ngIf="f.name.errors?.required">
+                    <p>Enter valid name.</p>
                 </div>
-            
+                <div *ngIf="f.name.errors?.minlength">
+                    <p>name shouldbe more then 3 chara.</p>
+                </div>
+
+            </div>
+
             <!-- phone -->
             <div class="input-icon">
                 <span class="lnr lnr-phone-handset"></span>
-                <input type="text" placeholder="Your phone" formControlName="phone">
-                <div *ngIf="f.phone.invalid && submitted" class="alert-error">
-                    <div *ngIf="f.phone.errors?.required"><p>Phone number is required</p></div>
-                </div>
+                <input type="text" placeholder="Your Email" formControlName="phone">
             </div>
+            <div *ngIf="f.phone.invalid && f.phone.touched" class="alert-error">
+                <div *ngIf="f.phone.errors?.required">
+                    <p>Enter phone number.</p>
+                </div>
+                <div *ngIf="f.phone.errors?.pattern">
+                    <p>Enter valid number.</p>
+                </div>
 
+            </div>
             <!-- email -->
             <div class="input-icon">
                 <span class="lnr lnr-envelope"></span>
-                <input type="email" placeholder="Your e-mail" formControlName="email">
-       
-            <div *ngIf="f.email.invalid && submitted" class="alert-error">
-                <div *ngIf="f.email.errors?.required"><p>Email is required.</p></div>
-                <div *ngIf="f.email.errors?.email"><p>Enter valid email..</p></div>
+                <input type="email" placeholder="Your mail" formControlName="email">
+            </div>
+            <div *ngIf="f.email.invalid && f.email.touched" class="alert-error">
+                <div *ngIf="f.email.errors?.required">
+                    <p>Enter valid email.</p>
+                </div>
+                <div *ngIf="f.email.errors?.email">
+                    <p>Invalid email.</p>
+                </div>
 
             </div>
-        </div>
-            
-            <!--property -->
-      
+        <!-- property  -->
             <div class="input-icon">
                 <span class="lnr lnr-home"></span>
                 <select name="Property" formControlName="property">
@@ -45,17 +55,22 @@
                     <option value="Recidential">RECIDENTIAL</option>
                     <option value="Commercial">COMMERCIAL</option>
                 </select>
-                <br>
             </div>
-            <div *ngIf="f.property.invalid && submitted" class="alert-error">
-                <div *ngIf="f.property.errors?.required"><p>Select valid property</p></div>
+            <div *ngIf="f.property.invalid && f.property.touched" class="alert-error">
+     
+                <div *ngIf="f.property.errors?.required">
+                    <p>Select property.</p>
+                </div>
+
             </div>
-        
+
             <!-- service -->
             <div class="input-icon">
                 <span class="lnr lnr-cog"></span>
                 <select name="Service" required formControlName="service">
-                    <option value=""><p>Type of Services</p></option>
+                    <option value="">
+                        <p>Type of Services</p>
+                    </option>
                     <option value="Interial design">Interial Design</option>
                     <option value="Space Planing">Space Planing</option>
                     <option value="Ligiting">Ligiting</option>
@@ -63,23 +78,27 @@
                     <option value="Project Management">Project Management</option>
                 </select>
             </div>
-                <div *ngIf="f.service.invalid && submitted" class="alert-error">
-                    <div *ngIf="f.service.errors?.required">
-                        <p>Select Service</p>
-                    </div>
+            <div *ngIf="f.service.invalid && f.service.touched" class="alert-error">
+                <div *ngIf="f.service.errors?.required">
+                    <p>Select service.</p>
                 </div>
-        
-            <!-- message -->
-            <div class="input-icon-message">
-                <span class="lnr lnr-leaf"></span>
-                <textarea placeholder="Message" formControlName="message" id="" cols="30" rows="1"><p>Your Message </p></textarea>
+
             </div>
-                <div *ngIf="f.message.invalid && submitted" class="alert-error">
-                    <div *ngIf="f.message.errors?.required">
-                        <p>Enter the messages</p>
-                    </div>
+
+            <!-- Messgae -->
+
+            <div class="input-icon">
+                <span class="lnr lnr-leaf"></span>
+                <textarea placeholder="Message" formControlName="message" id="" cols="30"
+                    rows="1"><p>Your Message </p></textarea>
+            </div>
+            <div *ngIf="f.message.invalid && f.message.touched" class="alert-error">
+                <div *ngIf="f.message.errors?.required">
+                    <p>Enter feedback.</p>
                 </div>
-            
+
+            </div>
+           
             <button class="quote-btn">Submit</button>
         </form>
     </div>

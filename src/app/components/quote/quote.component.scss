@@ -14,16 +14,17 @@
     height: 530px;
     background:linear-gradient(to top, rgba(255, 255, 255)100%,rgba(255, 255, 255, 0)100%);
     position: absolute;
-    top: 280px;
+    top: 350px;
     right: 90px;
     padding: 18px;
 }
 
 
 input{
-    // background:$input-background-color;
+    background:$input-background-color;
     font-family: $interiart-font;
     background: $input-background-color;
+    outline: none;
     margin: 10px;
     margin-top: 30px;
     border: none;
@@ -62,7 +63,7 @@ select{
     p{
         margin-top: -41px;
         margin-bottom: 0px;
-        padding-left: 10px;
+        padding-left: 0px;
         position: absolute;
         right: 14px;
     }
@@ -81,7 +82,7 @@ form{
         width: 265px;
         background: $input-background-color;
         padding-left: 9px;
-     
+        outline: none;
         border: $input-background-color;
         font-family: $interiart-font;
     }
@@ -97,6 +98,7 @@ form{
     }
 }
 .input-icon{
+    
     display: inline;
     padding: 12px;
     background: $input-background-color;
@@ -107,3 +109,22 @@ form{
     
     background: $input-background-color ;
 }
+
+@media screen and (max-width:375px) {
+    .form-class{
+        width: 347px;
+        height: 530px;
+        position:absolute;
+        top: 350px;
+        right: 100px;
+        padding: 18px;
+    }
+    
+}
+
+@media only screen and (max-width: 414px) {
+    .form-class{
+        top:340px;
+        right: 30px;
+    }
+ }
